@@ -2,10 +2,7 @@ package tn.esprit._3cinfo.nomdulivrable.DAO.Entities;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -26,5 +23,6 @@ public class DetailsEquipe implements Serializable {
 
     private String thematique;
 
-
+    @OneToOne(mappedBy = "d") // si on ne met pas mapped by il va créer deux liaisons unidirectionnelles
+    private Equipe e;
 }

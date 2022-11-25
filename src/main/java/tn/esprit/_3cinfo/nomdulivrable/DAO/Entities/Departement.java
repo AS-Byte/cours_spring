@@ -2,11 +2,9 @@ package tn.esprit._3cinfo.nomdulivrable.DAO.Entities;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Getter
@@ -23,4 +21,8 @@ public class Departement implements Serializable {
     private long idDepartment;
 
     private String nomDepartement;
+
+    @OneToMany (mappedBy = "de")
+    List<Etudiant> etudiants;
+
 }

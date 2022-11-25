@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Getter
@@ -27,4 +28,10 @@ public class Etudiant implements Serializable {
 
     @Enumerated (EnumType.STRING)
     private Domaine domaine;
+
+    @ManyToOne
+    private Departement de;
+
+    @ManyToMany(mappedBy = "etudiants")
+    List<Equipe>equipes;
 }

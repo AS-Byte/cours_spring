@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Getter
@@ -23,4 +24,10 @@ public class Equipe implements Serializable {
 
     @Enumerated (EnumType.STRING)
     private Niveau niveau;
+
+    @OneToOne
+    private DetailsEquipe d;
+
+    @ManyToMany
+    List<Etudiant>etudiants;
 }
