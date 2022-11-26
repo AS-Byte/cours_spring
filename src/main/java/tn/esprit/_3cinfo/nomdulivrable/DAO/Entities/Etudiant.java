@@ -34,4 +34,7 @@ public class Etudiant implements Serializable {
 
     @ManyToMany(mappedBy = "etudiants")
     List<Equipe>equipes;
+
+    @OneToMany (mappedBy = "contrats_etudiants")
+    List<Contrat>contratsetudiants;
 }

@@ -37,6 +37,9 @@ public class Contrat implements Serializable {
     @Transient
     private float salaire;
 
+    @ManyToOne
+    Contrat contrats_etudiants;
+
 
 
 
