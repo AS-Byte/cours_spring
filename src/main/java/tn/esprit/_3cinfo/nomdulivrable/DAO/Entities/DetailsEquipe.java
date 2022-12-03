@@ -17,7 +17,7 @@ import java.io.Serializable;
 public class DetailsEquipe implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idDetailsEquipe;
+    private Long idDetailsEquipe;
 
     private int salle;
 

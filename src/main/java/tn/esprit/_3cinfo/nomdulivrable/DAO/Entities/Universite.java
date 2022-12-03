@@ -19,7 +19,7 @@ public class Universite implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private long idUniveriste;
+    private Long idUniveriste;
 
     private String nomUniversite;
 

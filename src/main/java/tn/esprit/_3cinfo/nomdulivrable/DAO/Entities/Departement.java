@@ -18,7 +18,7 @@ public class Departement implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private long idDepartment;
+    private Long idDepartment;
 
     private String nomDepartement;
 
