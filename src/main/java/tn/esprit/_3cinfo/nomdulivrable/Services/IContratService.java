@@ -11,5 +11,6 @@ public interface IContratService {
     void deleteContrat (Long id );
     List<Contrat> findAllContrat();
     Contrat findContratById (Long id);
+    List<Contrat> searchContratByArchive (boolean arch);
 
 }

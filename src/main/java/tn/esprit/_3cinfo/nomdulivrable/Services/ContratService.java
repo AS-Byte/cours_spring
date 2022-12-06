@@ -41,4 +41,9 @@ public class ContratService implements IContratService {
     public Contrat findContratById(Long id) {
         return icr.findById(id).get(); // pour eviter d'avoir un nullpointer exception
     }
+
+    @Override
+    public List<Contrat> searchContratByArchive(boolean arch) {
+        return icr.getByArchive(arch);
+    }
 }

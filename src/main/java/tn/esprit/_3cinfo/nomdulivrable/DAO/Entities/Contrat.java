@@ -38,13 +38,5 @@ public class Contrat implements Serializable {
     private float salaire;
 
     @ManyToOne
-    Contrat contrats_etudiants;
-
-
-
-
-
-
-
-
+    Etudiant contrats_etudiants;
 }

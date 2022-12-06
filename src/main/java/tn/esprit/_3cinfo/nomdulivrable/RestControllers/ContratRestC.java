@@ -17,14 +17,22 @@ public class ContratRestC {
     Contrat addContrat(@RequestBody Contrat c){
         return ics.addContrat(c);
     }
+
     @PutMapping("updateC")
     Contrat updateContrat(@RequestBody Contrat c) {return ics.updateContrat(c);}
+
     @DeleteMapping ("deleteC")
     void deleteContrat(@RequestBody Contrat c) {ics.deleteContrat(c);}
+
     @DeleteMapping("deleteCId/{id}")
     void deleteContrat (@PathVariable Long id ) {ics.deleteContrat(id);}
+
     @GetMapping("findAllC")
     List<Contrat> findAllContrat() { return ics.findAllContrat(); }
+
     @GetMapping("findbyIDC")
     Contrat findContratById (@RequestParam Long id) {return ics.findContratById(id);} //sans ordre
+
+    @GetMapping("findByArch/{arch}")
+    List<Contrat> findByArchive(@PathVariable boolean arch) { return ics.searchContratByArchive(arch); }
 }
