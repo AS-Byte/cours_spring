@@ -38,7 +38,7 @@ public class DepartementService implements IDepartementService {
     }
 
     @Override
-    public Departement findDepartement(Long id) {
+    public Departement findDepartementById(Long id) {
 
         return idr.findById(id).get();
     }

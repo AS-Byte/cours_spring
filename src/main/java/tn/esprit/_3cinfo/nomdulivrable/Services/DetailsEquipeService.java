@@ -2,9 +2,7 @@ package tn.esprit._3cinfo.nomdulivrable.Services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import tn.esprit._3cinfo.nomdulivrable.DAO.Entities.Departement;
 import tn.esprit._3cinfo.nomdulivrable.DAO.Entities.DetailsEquipe;
-import tn.esprit._3cinfo.nomdulivrable.DAO.Entities.Equipe;
 import tn.esprit._3cinfo.nomdulivrable.DAO.Repositories.DetailsEquipeRepo;
 
 import java.util.List;
@@ -40,7 +38,7 @@ public class DetailsEquipeService implements IDetailsEquipeService {
     }
 
     @Override
-    public DetailsEquipe findDetailsEquipe(Long id) {
+    public DetailsEquipe findDetailsEquipeById(Long id) {
         return ider.findById(id).get();
     }
 }

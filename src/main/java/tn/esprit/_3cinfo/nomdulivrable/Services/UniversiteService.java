@@ -38,7 +38,7 @@ public class UniversiteService implements IUniversiteService {
     }
 
     @Override
-    public Universite findUniversite(Long id) {
+    public Universite findUniversiteById(Long id) {
         return iur.findById(id).get();
     }
 }

@@ -38,7 +38,7 @@ public class EtudiantService implements IEtudiantService{
     }
 
     @Override
-    public Etudiant findEtudiant(Long id) {
+    public Etudiant findEtudiantById(Long id) {
         return ietr.findById(id).get();
     }
 }

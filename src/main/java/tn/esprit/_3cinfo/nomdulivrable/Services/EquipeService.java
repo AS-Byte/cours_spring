@@ -38,7 +38,7 @@ public class EquipeService implements IEquipeService {
     }
 
     @Override
-    public Equipe findEquipe(Long id) {
+    public Equipe findEquipeById(Long id) {
         return ieqr.findById(id).get();
     }
 }
