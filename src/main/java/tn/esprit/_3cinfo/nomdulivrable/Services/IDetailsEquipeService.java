@@ -10,5 +10,5 @@ public interface IDetailsEquipeService {
     void deleteDetailsEquipe(DetailsEquipe d);
     void deleteDetailsEquipe (Long id );
     List<DetailsEquipe> findAllDetailsEquipe();
-    DetailsEquipe findDetailsEquipe (Long id);
+    DetailsEquipe findDetailsEquipeById (Long id);
 }

@@ -19,12 +19,12 @@ public class ContratRestC {
     }
     @PutMapping("updateC")
     Contrat updateContrat(@RequestBody Contrat c) {return ics.updateContrat(c);}
-    @DeleteMapping ("deleteCO")
+    @DeleteMapping ("deleteC")
     void deleteContrat(@RequestBody Contrat c) {ics.deleteContrat(c);}
     @DeleteMapping("deleteCId/{id}")
     void deleteContrat (@PathVariable Long id ) {ics.deleteContrat(id);}
     @GetMapping("findAllC")
-    List<Contrat> findAllContrat(){return ics.findAllContrat();}
+    List<Contrat> findAllContrat() { return ics.findAllContrat(); }
     @GetMapping("findbyIDC")
     Contrat findContratById (@RequestParam Long id) {return ics.findContratById(id);} //sans ordre
 }

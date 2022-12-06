@@ -9,5 +9,5 @@ public interface IEquipeService {
     void deleteEquipe(Equipe d);
     void deleteEquipe (Long id );
     List<Equipe> findAllEquipe();
-    Equipe findEquipe (Long id);
+    Equipe findEquipeById (Long id);
 }

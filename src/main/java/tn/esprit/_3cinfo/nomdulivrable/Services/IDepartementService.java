@@ -1,6 +1,5 @@
 package tn.esprit._3cinfo.nomdulivrable.Services;
 
-import tn.esprit._3cinfo.nomdulivrable.DAO.Entities.Contrat;
 import tn.esprit._3cinfo.nomdulivrable.DAO.Entities.Departement;
 
 import java.util.List;
@@ -11,5 +10,5 @@ public interface IDepartementService {
     void deleteDepartement(Departement d);
     void deleteDepartement (Long id );
     List<Departement> findAllDepartement();
-    Departement findDepartement (Long id);
+    Departement findDepartementById (Long id);
 }

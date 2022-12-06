@@ -10,5 +10,5 @@ public interface IEtudiantService {
     void deleteEtudiant(Etudiant d);
     void deleteEtudiant (Long id );
     List<Etudiant> findAllEtudiant();
-    Etudiant findEtudiant (Long id);
+    Etudiant findEtudiantById (Long id);
 }
