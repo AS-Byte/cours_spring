@@ -2,6 +2,7 @@ package tn.esprit._3cinfo.nomdulivrable.Services;
 
 import tn.esprit._3cinfo.nomdulivrable.DAO.Entities.Contrat;
 
+import java.util.Date;
 import java.util.List;
 
 public interface IContratService {
@@ -12,5 +13,6 @@ public interface IContratService {
     List<Contrat> findAllContrat();
     Contrat findContratById (Long id);
     List<Contrat> searchContratByArchive (boolean arch);
+    List<Contrat> searchContratInBetweenDates(Date date1, Date date2);
 
 }

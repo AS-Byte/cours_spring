@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import tn.esprit._3cinfo.nomdulivrable.DAO.Entities.Contrat;
 import tn.esprit._3cinfo.nomdulivrable.Services.IContratService;
 
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -35,4 +36,7 @@ public class ContratRestC {
 
     @GetMapping("findByArch/{arch}")
     List<Contrat> findByArchive(@PathVariable boolean arch) { return ics.searchContratByArchive(arch); }
+
+    @GetMapping("findConBetweenDates")
+    List<Contrat> findBetwDates(@RequestParam Date date1,@RequestParam Date date2) {return ics.searchContratInBetweenDates(date1,date2) ; }
 }

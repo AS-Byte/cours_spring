@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import tn.esprit._3cinfo.nomdulivrable.DAO.Entities.Contrat;
 import tn.esprit._3cinfo.nomdulivrable.DAO.Repositories.ContratRepo;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -46,4 +47,11 @@ public class ContratService implements IContratService {
     public List<Contrat> searchContratByArchive(boolean arch) {
         return icr.getByArchive(arch);
     }
+
+    @Override
+    public List<Contrat> searchContratInBetweenDates(Date date1, Date date2) {
+        return icr.getByDateDebutCBetween(date1, date2);
+    }
+
+
 }
