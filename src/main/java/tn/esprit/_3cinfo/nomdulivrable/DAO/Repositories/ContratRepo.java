@@ -31,9 +31,4 @@ public interface ContratRepo extends CrudRepository <Contrat,Long> {
     List<Contrat> retrieveContratsByIdEtudiantSQL(Long idetudiant);
 
 
-    // La méthode suivante répond à la question: Afficher la liste des étudiants avec un niveau passé en paramètre, elle
-    // ne peut etre faite qu'avec sql pck il y'a une table associative
-
-
-
 }

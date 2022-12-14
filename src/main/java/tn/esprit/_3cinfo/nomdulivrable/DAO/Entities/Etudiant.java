@@ -29,7 +29,7 @@ public class Etudiant implements Serializable {
     @Enumerated (EnumType.STRING)
     private Domaine domaine;
 
-    @ManyToOne
+    @ManyToOne //vu qu'il n'ya pas de mappedby, l'étudiant est le parent
     private Departement de;
 
     @ManyToMany(mappedBy = "etudiants")

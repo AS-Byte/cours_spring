@@ -11,4 +11,5 @@ public interface IUniversiteService {
     void deleteUniversite (Long id );
     List<Universite> findAllUniversite();
     Universite findUniversiteById (Long id);
+    void assignUniversiteToDepartement(Integer idUniversite, Integer idDepartement);
 }

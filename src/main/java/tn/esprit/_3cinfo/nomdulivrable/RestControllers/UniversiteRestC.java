@@ -30,4 +30,9 @@ public class UniversiteRestC {
 
     @GetMapping("findbyIDUni")
     Universite findUniversiteById (@RequestParam Long id) {return iuns.findUniversiteById(id);}
+
+    @PutMapping("AffectUniDep")
+    void assignUniversiteToDepartement(@RequestParam Integer idUniversite, @RequestParam Integer idDepartement) {
+        iuns.assignUniversiteToDepartement(idUniversite,idDepartement);
+    }
 }

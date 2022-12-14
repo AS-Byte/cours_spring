@@ -30,4 +30,9 @@ public class EtudiantRestC {
 
     @GetMapping("findbyIDEtu")
     Etudiant findEtudiantById (@RequestParam Long id) {return iets.findEtudiantById(id);}
+
+    @PutMapping("AffecterEtu")
+    void affecterEtudiantaDepartement(@RequestParam Integer etudiantId, @RequestParam Integer departementId){
+        iets.assignEtudiantToDepartement(etudiantId, departementId);
+    }
 }

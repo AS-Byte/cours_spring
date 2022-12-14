@@ -23,7 +23,7 @@ public class Universite implements Serializable {
 
     private String nomUniversite;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     List<Departement> departements;
 
 }
