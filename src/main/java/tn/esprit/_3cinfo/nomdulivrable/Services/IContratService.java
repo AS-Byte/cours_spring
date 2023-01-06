@@ -14,5 +14,6 @@ public interface IContratService {
     Contrat findContratById (Long id);
     List<Contrat> searchContratByArchive (boolean arch);
     List<Contrat> searchContratInBetweenDates(Date date1, Date date2);
+    String retrieveAndUpdateStatusContrat();
 
 }

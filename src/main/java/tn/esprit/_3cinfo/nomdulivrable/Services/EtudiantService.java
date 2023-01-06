@@ -63,4 +63,16 @@ public class EtudiantService implements IEtudiantService{
 
     }
 
+    @Override
+    public Etudiant addAndAssignEtudiantToEquipeAndContract(Etudiant e, Integer idContrat, Integer idEquipe) {
+       /* addEtudiant(e);
+        Integer idcontrataaffecter=idContrat;
+        Integer idequipeaaffecter=idEquipe;
+
+        e.setContratsetudiants(idContrat);
+        e.setE*/
+
+        return null;
+    }
+
 }

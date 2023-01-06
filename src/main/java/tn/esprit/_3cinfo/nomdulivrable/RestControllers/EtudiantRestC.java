@@ -28,7 +28,7 @@ public class EtudiantRestC {
     @GetMapping("findAllEtu")
     List<Etudiant> findAllEtudiant() { return iets.findAllEtudiant(); }
 
-    @GetMapping("findbyIDEtu")
+    @GetMapping("findEtuById")
     Etudiant findEtudiantById (@RequestParam Long id) {return iets.findEtudiantById(id);}
 
     @PutMapping("AffecterEtu")

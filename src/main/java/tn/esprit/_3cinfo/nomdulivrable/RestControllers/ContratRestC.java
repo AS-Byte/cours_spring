@@ -11,6 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("contratRC") //pour personnaliser l'URL, route l'accès à la ressource
 public class ContratRestC {
+
     @Autowired // ou @Inject
     private IContratService ics;
 
